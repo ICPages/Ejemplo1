@@ -1,0 +1,142 @@
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #FF5733;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: url(Fondo1.png);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a:hover {
+    color: #ffc300;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section a {
+    color: #333;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #FF5733;
+    text-decoration: underline;
+}
+
+.promociones {
+    background-color: #FFC300; /* Color de fondo para promociones */
+    border: 2px solid #FF5733;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del menú */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas */
+}
+
+.menu-item {
+    background-color: #f9f9f9; /* Color de fondo para los elementos del menú */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px); /* Establece el ancho a 25% menos márgenes */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-item img {
+    width: 80px; /* Ancho de las imágenes */
+    height: auto; /* Mantener la proporción */
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.menu-description {
+    flex-grow: 1; /* Para que ocupe el espacio disponible */
+}
+
+footer {
+    background: url(Fondo1.png);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFC300;
+    text-decoration: underline;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espaciado en vertical */
+    }
+
+    section {
+        margin: 10px; /* Reduce margen en pantallas pequeñas */
+    }
+
+    .menu-container {
+        flex-direction: column; /* Cambia la disposición a columna */
+        align-items: center; /* Alineación al centro */
+    }
+
+    .menu-item {
+        width: 90%; /* Establece el ancho a 90% en pantallas pequeñas */
+    }
+}
